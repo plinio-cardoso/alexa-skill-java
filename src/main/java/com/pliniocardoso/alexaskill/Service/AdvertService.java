@@ -11,7 +11,13 @@ public class AdvertService {
     public List<Advert> getAdverts(String search_type, String location) {
         String rental = "rental";
         String sale = "sale";
+        String galway = "Galway";
+        String dublin = "Dublin";
         List<Advert> adverts = new ArrayList<>();
+
+        if (!location.equals(galway) || !location.equals(dublin)) {
+            return adverts;
+        }
 
         if (search_type.equals(sale)) {
             return getSaleProperties(adverts, location);
