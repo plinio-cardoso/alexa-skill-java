@@ -15,8 +15,5 @@ public class Advert {
     private String address;
 
     @NotNull
-    private String description;
-
-    @NotNull
-    private String type;
+    private Integer price;
 }
