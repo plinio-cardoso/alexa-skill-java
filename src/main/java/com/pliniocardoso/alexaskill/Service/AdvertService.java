@@ -31,7 +31,7 @@ public class AdvertService {
     }
 
     private List<Advert> getSaleProperties(List<Advert> adverts, String location) {
-        for (int i = 0; i <= 2; i++) {
+        for (int i = 1; i <= 2; i++) {
             adverts.add(Advert.builder().address(getRandomAddress(location)).price(getRandomSalePrice()).build());
         }
 
@@ -39,7 +39,7 @@ public class AdvertService {
     }
 
     private List<Advert> getRentalProperties(List<Advert> adverts, String location) {
-        for (int i = 0; i <= 3; i++) {
+        for (int i = 1; i <= 3; i++) {
             adverts.add(Advert.builder().address(getRandomAddress(location)).price(getRandomRentalPrice()).build());
         }
 
