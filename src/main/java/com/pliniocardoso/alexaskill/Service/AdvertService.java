@@ -15,7 +15,7 @@ public class AdvertService {
         String dublin = "Dublin";
         List<Advert> adverts = new ArrayList<>();
 
-        if (!location.equals(galway) || !location.equals(dublin)) {
+        if (!location.equals(galway) && !location.equals(dublin)) {
             return adverts;
         }
 
